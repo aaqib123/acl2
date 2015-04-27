@@ -1,0 +1,4 @@
+access-list 101 tcp permit 172.16.4.0 0.0.0.255 192.168.3.1 0.0.0.0 eq 20
+access-list 101 tcp deny 205.2.2.0 0.0.0.255 192.168.3.1 0.0.0.0 eq 21
+interface S0
+ip access-group 101  in
